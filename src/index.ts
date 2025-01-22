@@ -1,4 +1,4 @@
-import { StreamPermission, StreamrClient } from 'streamr-client'
+import { StreamPermission, StreamrClient } from '@streamr/sdk'
 import { Config } from './types/ConfigTypes'
 import { parseEnvToConfigs } from './parseUtils'
 import { poll, getPrometheusMetrics } from './poll'

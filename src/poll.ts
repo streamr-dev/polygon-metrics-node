@@ -3,7 +3,7 @@ import parsePrometheusTextFormat from 'parse-prometheus-text-format'
 
 import { MetricsMessage, Measurable, ParsedPrometheusMessage } from './types/MessageTypes'
 import { Config } from './types/ConfigTypes'
-import StreamrClient from 'streamr-client'
+import StreamrClient from '@streamr/sdk'
 
 export async function getPrometheusMetrics(url: string, requestTimeoutSeconds: number): Promise<ParsedPrometheusMessage[]> {
 	// Fetch from the Prometheus endpoint			
